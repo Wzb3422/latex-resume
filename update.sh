@@ -14,15 +14,6 @@ make -C latex
 mv latex/*.pdf ./pdf
 make -C latex clean-tex
 
-echo "====removing useless files===="
-
-rm -rf .git
-rm *~
-rm latex/*.log
-rm latex/*.aux
-rm latex/*.out
-rm latex/*.fls
-
 echo "===initialize git repository=="
 
 git init
